@@ -1,7 +1,7 @@
 import random
 
 while True:
-  user = input("Enter a choice (rock, paper, scissors): ")
+  user = input("Enter a choice (rock, paper, scissors, end): ")
   computer=random.choice(["rock", "paper", "scissors"])
 
 
@@ -13,5 +13,9 @@ while True:
     print("Computer wins!")
   elif computer == "scissors" and user == "paper":
     print("Computer wins!")
+  elif user == "end":
+    print("See you later :)")
+    break
   else:
     print("You win!!!")
+
